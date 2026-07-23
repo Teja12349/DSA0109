@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int choice;
+    cout << "1. Hexadecimal to Decimal\n";
+    cout << "2. Decimal to Hexadecimal\n";
+    cout << "Enter your choice: ";
+    cin >> choice;
+    if(choice == 1){
+        string hex;
+        cout << "Enter hexadecimal number: ";
+        cin >> hex;
+        int decimal = stoi(hex, nullptr, 16);
+        cout << "Decimal = " << decimal;
+    }
+    else if(choice == 2){
+        int decimal;
+        cout << "Enter decimal number: ";
+        cin >> decimal;
+        cout << "Hexadecimal = " << uppercase << hex << decimal;
+    }
+    else{
+        cout << "Invalid choice";
+    }
+    return 0;
+}
